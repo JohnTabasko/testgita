@@ -24,3 +24,19 @@ git add nazwa_pliku
 
 - Zapis do repozytoriun lokalnego
 git commit -m "jakaś_wiadomość"
+
+- Po modyfikacji pliku w repozytorium lokalnym można zmiany zatwierdzić za pomocą 
+git add nazwa_pliku
+- Lub odrzucić za pomocą 
+git restore nazwa_pliku
+
+- Aby zobaczyć historię wprowadzanych zmian należy użyć komendy
+git log
+
+- Do zmiany maila użytkownika służy komenda
+git config --global user.email "mail@gmail.com"
+- Do zmiany nazwy użytkownika służy komenda
+git config --global user.name "name"
+
+- Do weryfikacji zmian służy komenda 
+git diff nazwa_pliku
