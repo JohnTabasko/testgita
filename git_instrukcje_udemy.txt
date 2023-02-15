@@ -1,0 +1,18 @@
+GIT 
+
+- Inicjalizacja repozytorium git
+git init 
+
+- Informacja o statusie repozytorium (struktura, branch etc)
+git status
+
+Pliki wrzucone do repozytorium są na razie nieśledzone. 
+
+- Do śledzenia plików używam komendy
+git add nazwa_pliku
+
+- Jeśli chcę cofnąć tą operację - przestać śledzić dany plik użyję komendy
+git rm --cached nazwa_pliku
+
+- Jeśli chcę śledzić wszystkie pliki znajdujące się w repozytorium użyję komendy:
+git add .
