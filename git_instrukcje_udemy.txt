@@ -16,3 +16,11 @@ git rm --cached nazwa_pliku
 
 - Jeśli chcę śledzić wszystkie pliki znajdujące się w repozytorium użyję komendy:
 git add .
+
+- Pliki dodane za pomocą git add są już śledzone i od ich dodania będę informowany o wszelkich modyfikacjach
+po użyciu komendy git status
+- Jeśli uznam, że zmiana jest poprawna, ponownie muszę użyć komendy:
+git add nazwa_pliku
+
+- Zapis do repozytoriun lokalnego
+git commit -m "jakaś_wiadomość"
