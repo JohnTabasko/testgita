@@ -51,7 +51,8 @@ git commit -a -m "wiadomość"
 - Do podejrzenia pliku można użyć komendy
 cat ./nazwa_pliku (to nie jest komenda gita)
 
-- Aby zrezygnować z dodania pliku z sekcji zmian gotowych do zapisu do repozytorium używam komendy
+- Po dokonaniu zmiany i użyciu komendy git add nazwa_pliku, plik jest w sekcji zmian gotowych do zapisu
+- Aby zrezygnować z dodania pliku z sekcji zmian gotowych użyję komendy
 git restore --staged nazwa_pliku
 - Teraz aby odrzucić zmiany używam komendy 
 git restore nazwa pliku
