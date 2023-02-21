@@ -99,5 +99,6 @@ git checkout klient101
 
 - Ważne gdzie wykonuje się polecenie git branch nazwa; Gałąź na której obecnie się znajduję zostaje skopiowana
 
-
+- Łączenie zmian między gałęziami, używam komendy
+git merge klient101
 
