@@ -1,5 +1,9 @@
 GIT 
 
+******************
+Podstawowe komendy
+******************
+
 - Do zmiany domyślnego edytora na notepad++ posłuży komenda:
 git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
@@ -74,8 +78,24 @@ gotowych do złożenia (czyli nadal możliwe jest przywrócenie stanu przed rese
 - Do ignorowania plików tworzę nowy plik, w którym będę zapisywać informacje
 touch .gitignore
 
+******************
+Gałęzie - wprowadzenie
+******************
+Rozgałęzienie oznacza odbicie od głównego pnia linii rozwoju i kontynuację pracy bez wprowadzania tam bałaganu.
 
+Zadanie
+100 klientów korzysta z aplikacji
+101 klient - wymaganie odnośnie logowania za pomocą konta Google
+102 klient - wymaganie odnośnie logowania za pomocą konta Microsoft
 
+- Aby stworzyć nową gałąź używam komendy
+git branch klient101
+
+- Aby sprawdzić jakie są gałęzie użyje komendy
+git branch
+
+- Aby przejść do konkretnej gałęzi używam komendy
+git checkout klient101
 
 
 
