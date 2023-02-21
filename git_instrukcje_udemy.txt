@@ -102,3 +102,6 @@ git checkout klient101
 - Łączenie zmian między gałęziami, używam komendy
 git merge klient101
 
+- Do usunięcia brancha używam komendę
+git branch -d klient101
+
