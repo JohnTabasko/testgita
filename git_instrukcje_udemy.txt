@@ -105,3 +105,34 @@ git merge klient101
 - Do usunięcia brancha używam komendę
 git branch -d klient101
 
+- W przypadku konfliktu podczas łączenia zmian między gałęziami należy poprawić linijki kodu, które są niespójne
+
+- Jeśli chcę wymusić usunięcie brancha mimo niezmergowanych zmian użyje 
+git branch -D klient101
+
+- Zapisywanie zmian do schowka za pomoca komendy
+git stash
+Teraz nie będę widział wprowadzonych zmian, tak jakby został wykonany commit 
+- Teraz żeby przywrócić zmiany użyję komendy
+git stash apply
+
+- Nawet jeśli usunę zmiany za pomocą komendy
+git restore nazwa_pliku 
+To po ponownym użyciu komendy git stash apply zmiany się pokażą, ponieważ są one zapisane w schowku
+
+- Żeby pobrać dane ze schowka i go wyczyścić użyję komendy
+git stash pop 
+
+- Czyli jak chcę kilkukrotnie używać zmian ze schowka używam git stash apply
+
+
+********************
+Repozytorium zdalne
+********************
+Github
+
+- Do dodania repozytorium zdalnego służy komenda
+git remote add origin https://github.com/JohnTabasko/testgita.git
+
+- Do zmiany nazwy brancha głównego służy komenda
+git branch -M main
