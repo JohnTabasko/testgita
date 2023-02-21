@@ -97,7 +97,7 @@ git branch
 - Aby przejść do konkretnej gałęzi używam komendy
 git checkout klient101
 
-
+- Ważne gdzie wykonuje się polecenie git branch nazwa; Gałąź na której obecnie się znajduję zostaje skopiowana
 
 
 
