@@ -58,6 +58,10 @@ git restore --staged nazwa_pliku
 git restore nazwa pliku
 
 
+- Do cofania repozytorium do konkretnego stanu muszę znać ID commita; 
+Mogę go sprawdzić w historii commitów, poprzez komendę 
+git log
+służy komenda
 
 
 
