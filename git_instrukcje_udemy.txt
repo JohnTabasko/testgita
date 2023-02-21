@@ -1,5 +1,8 @@
 GIT 
 
+- Do zmiany domyślnego edytora na notepad++ posłuży komenda:
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
 - Inicjalizacja repozytorium git
 git init 
 
@@ -57,16 +60,19 @@ git restore --staged nazwa_pliku
 - Teraz aby odrzucić zmiany używam komendy 
 git restore nazwa pliku
 
-
 - Do cofania repozytorium do konkretnego stanu muszę znać ID commita; 
 Mogę go sprawdzić w historii commitów, poprzez komendę 
 git log
-służy komenda
+- Do zmiany wersji pliku do konkretnego commita (do usunięcia zmiany z konkretnego commita) służy komenda
+git revert id_commita
 
+- Do zresetowania stanu pliku do konkretnego commita służy komenda
+git reset id_commita
+- Po zresetowaniu pliku do stanu z któregoś commita, zmiany, które były w trakcie zostaną wrzucone do obszaru zmian 
+gotowych do złożenia (czyli nadal możliwe jest przywrócenie stanu przed resetem)
 
-
-
-
+- Do ignorowania plików tworzę nowy plik, w którym będę zapisywać informacje
+touch .gitignore
 
 
 
