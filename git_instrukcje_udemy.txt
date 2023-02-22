@@ -166,6 +166,10 @@ git push -u origin przypomnienie_hasla
 - Teraz na githubie przechodzę do zakładki pull request - tutaj można zmergować zmiany wprowadzone na jakimś branchu z innym, 
 można dodać do 15 reviewerów jeśli nad projektem pracuje wiele osób
 
+- Do pobrania zmian z repozytorium zdalnego służy komenda (no nie wiem)
+git fetch origin master
+- Zamiast tego użyłem
+git pull origin master
 
 
 
