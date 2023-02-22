@@ -136,3 +136,32 @@ git remote add origin https://github.com/JohnTabasko/testgita.git
 
 - Do zmiany nazwy brancha głównego służy komenda
 git branch -M main
+
+- Do wypchnięcia zmian które znajdują się w branchu do repozytorium zdalnego służy komenda
+git push -u origin master
+Do wykonania tego polecenia będzie potrzebna autoryzacja - podanie loginu i hasła nie zadziała, od 2021 roku 
+- Do autoryzacji używa się klucza ssh
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- Do wygenerowania klucza służy komenda
+ssh-keygen -t ed25519 -C "your_email@example.com"
+lub
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+- Po użyciu komendy skipuję opcje enterem i następnie generuje się klucz 
+Po wygenerowaniu pokazana jest ścieżka gdzie jest zapisany klucz
+Wygenerowany klucz następnie dodaję w githubie - klikam na swój profil -> settings -> w obszarze access SSH and GPG keys -> new ssh key-and-adding-it-to-the-ssh-agent
+
+- Z racji że korzystam z klucza ssh należy teraz dokonać pewnej modyfikacji
+- Najpierw muszę usunąć informację o repozytorium zdalnym za pomocą komendy
+git remote rm origin
+- I następnie za pomocą komendy dodać repozytorium zdalne z kluczem ssh
+git remote add origin git@github.com:JohnTabasko/testgita.git
+
+
+
+
+
+
+
+
+
+
