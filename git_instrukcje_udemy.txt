@@ -155,8 +155,16 @@ Wygenerowany klucz następnie dodaję w githubie - klikam na swój profil -> set
 git remote rm origin
 - I następnie za pomocą komendy dodać repozytorium zdalne z kluczem ssh
 git remote add origin git@github.com:JohnTabasko/testgita.git
+- Teraz tworzę nowego brancha 
+git branch przypomnienie_hasla
+- Następnie po wprowadzeniu zmian w pliku robię git add . i git commit -m 
+- i wypycham brancha do repozytorium zdalnego
+git push -u origin przypomnienie_hasla
 
+- Na githubie powinien pojawić się teraz nowy branch
 
+- Teraz na githubie przechodzę do zakładki pull request - tutaj można zmergować zmiany wprowadzone na jakimś branchu z innym, 
+można dodać do 15 reviewerów jeśli nad projektem pracuje wiele osób
 
 
 
