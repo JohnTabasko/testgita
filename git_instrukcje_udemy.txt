@@ -166,13 +166,25 @@ git push -u origin przypomnienie_hasla
 - Teraz na githubie przechodzę do zakładki pull request - tutaj można zmergować zmiany wprowadzone na jakimś branchu z innym, 
 można dodać do 15 reviewerów jeśli nad projektem pracuje wiele osób
 
-- Do pobrania zmian z repozytorium zdalnego służy komenda (no nie wiem)
+- Do pobrania zmian z repozytorium zdalnego służy komenda
 git fetch origin master
-- Zamiast tego użyłem
+- A następnie trzeba zmiany zmergować na lokalnym repozytorium
+git merge
+- Zamiast tego można użyć jednej komendy
 git pull origin master
 
+- Jeśli chcę pobrać zmiany dla wszystkich branchy
+git pull --all
 
+- Jeśli chcę wypchnąć zmiany dla wszystkich branchy 
+git push --all
 
+- Do pobrania repozytorium z githuba służy komenda 
+git clone nazwa_repozytorium(z zakładki ssh)
 
+***********************
+Praca z TortoiseGit
+***********************
+Środowisko z interfejsem graficznym do wykonywania komend gita zamiast używania gitbasha
 
 
